@@ -1,51 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <form>
+        <div>
+          <div>Name:</div>
+          <input class="name-1" type="text" id="name" name="user_name" />
+        </div>
+        <div>
+          <div>E-mail:</div>
+          <input class="mail-1" type="email" id="mail" name="user_email" />
+        </div>
+        <div>
+          <div>Message:</div>
+          <textarea class="message-1" name="user_message"></textarea>
+        </div>
+        <input class="btn" type="button" name="button" value="Отправить" />
+        <input type="reset" name="clear" value="Очистить" />
+      </form>
+      <div class="result">
+        <div>
+          <div>Ваше имя:</div>
+          <div class="name res"></div>
+        </div>
+        <div>
+          <div>Ваш E-mail:</div>
+          <div class="mail res"></div>
+        </div>
+        <div>
+          <div>Ваше соощение:</div>
+          <div class="message res"></div>
+        </div>
+        <button class="clear">Очистить</button>
+      </div>
+    </div>
 
-</head>
-<body>
+    <div id="imageContainer"></div>
 
-    
-    <!-- <select>
-        
-         <option id = "btn" value="Чебурашка">Чебурашка</option>
-         <option  id = "btn" value="Крокодил Гена">Крокодил Гена</option>
-         <option id = "btn" value="Шапокляк">Шапокляк</option>
-         <option id = "btn" value="Крыса Лариса">Крыса Лариса</option>
+    <select name="test" class="test" onChange="getValue()">
+      <option selected disabled hidden>Выбери цвет</option>
+      <option value="red">Red</option>
+      <option value="blue">Blue</option>
+      <option value="green">Green</option>
+      <option value="yellow">Yellow</option>
     </select>
-      -->
+    <div class="divTest"></div>
 
+    <div id="root">
+      <form id="form">
+        <input type="number" class="row" placeholder="rows" />
+        <input type="number" class="column" placeholder="columns" />
+        <input type="button" class="send" value="Отправить" />
+        <input type="reset" class="clear2" value="Очистить" />
+      </form>
+      <table class="elem"></table>
+    </div>
 
-
-      <form onsubmit="return false">
-      
-        <select id="select_">
-        <option value="one">1</option>
-        <option value="two">2</option>
-        <option value="three">3</option>
-        </select>
-        <input type="submit" value="Отправить" onclick="getValue()">
-    </form>
-        
-
-
-         <!-- <select onchange="getValue(this.value);">
-            <option value="one">1</option>
-            <option value="two">2</option>
-            <option value="three">3</option>
-        </select>
-             -->
-
-            
-            
-
-
-
-
-<script src="./js/main.js"></script>
-  
-</body>
+    <script src="./js/main.js"></script>
+  </body>
 </html>

@@ -1,11 +1,35 @@
 body{
-    padding: 300px 0px 0px 500px;
+    padding: 50px 0px 0px 200px;
 }
 
-button{
-    background-color: rgb(255, 0, 0);
-    width: 200px;
-    height: 100px;
-    font-size: 50px;
+.wrapper{
+    display:flex;
+    background-color: rgba(97, 202, 76, 0.788);
+    width: 500px;
+    padding: 10px;
+}
 
+.result>div{
+    margin-left: 50px;
+    display: flex;
+}
+.res{
+    margin-left: 20px;
+    font-weight: 700;
+    width: 130px;
+    height: auto;
+    word-wrap: break-word;
+}
+.result>button{
+    margin-left: 50px;
+}
+.divTest{
+    width: 50px;
+    height: 20px;
+    border: 1px solid black;
+    margin: 20px 0px 50px 0px;
+}
+table td{
+    padding: 20px;
+    border: 1px solid black
 }
